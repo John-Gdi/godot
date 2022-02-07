@@ -37,7 +37,7 @@
 
 #include "thirdparty/misc/yuv2rgb.h"
 
-// libsimplewebm
+// libsimplewebm lib
 #include <OpusVorbisDecoder.hpp>
 #include <VPXDecoder.hpp>
 
@@ -174,6 +174,8 @@ void VideoStreamPlaybackWebm::play() {
 	delay_compensation /= 1000.0;
 
 	playing = true;
+
+	return false;
 }
 
 bool VideoStreamPlaybackWebm::is_playing() const {
